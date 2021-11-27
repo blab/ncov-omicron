@@ -1,0 +1,3 @@
+This analysis is specific to lineage B.1.1.529 / clade 21K / Omicron variant viruses. Currently, this includes all viruses assigned to lineage B.1.1.529 in GISAID and additionally it includes a background of ~100 viruses evenly sampled through space and time over the course of the pandemic.
+
+We gratefully acknowledge the authors, originating and submitting laboratories of the genetic sequence and metadata made available through [GISAID](https://gisaid.org) on which this research is based. An attribution table is available by clicking on "Download Data" at the bottom of the page and then clicking on "Acknowledgments" in the resulting dialog box.

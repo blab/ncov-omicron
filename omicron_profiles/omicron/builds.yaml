@@ -1,0 +1,36 @@
+auspice_json_prefix: ncov
+
+genes: ["ORF1a", "ORF1b", "S", "ORF3a", "E", "M", "ORF6", "ORF7a", "ORF7b", "ORF8", "N", "ORF9b"]
+use_nextalign: true
+
+# Note: we have a separate profile for aligning GISAID sequences. This is triggered
+# as soon as new sequences are available. This workflow is thus intended to be
+# started from the filtered alignment.                        james, sept 2021
+inputs:
+  - name: focal
+    metadata: "data/metadata.tsv"
+    sequences: "data/sequences.fasta"
+  - name: context
+    metadata: "data/global_subsampled_metadata.tsv"
+    sequences: "data/global_subsampled_sequences.fasta"
+
+# Define locations for which builds should be created.
+# For each build we specify a subsampling scheme via an explicit key.
+# These subsampling schemes are defined at the bottom of this file.
+# (They override the defaults)
+builds:
+  omicron:
+    auspice_config: "omicron_profiles/omicron/omicron_auspice_config.json"
+    title: "Genomic epidemiology of Omicron variant of novel coronavirus"
+
+# if different traits should be reconstructed for some builds, specify here
+# otherwise the default trait config in defaults/parameters.yaml will used
+traits:
+  omicron:
+    sampling_bias_correction: 2.5
+    columns: ["country"]
+
+files:
+  description: "omicron_profiles/omicron/omicron_description.md"
+
+include_hcov19_prefix: True

@@ -35,11 +35,11 @@ AY.39 + S:1073N (Delta)	nuc	28881	T
 AY.39 + S:1073N (Delta)	nuc	27604	A
 AY.39 + S:1073N (Delta)	S	1073	N
 
-B.1.1.529 (Omicron)	nuc	25000	T
-B.1.1.529 (Omicron)	nuc	25584	T
-B.1.1.529 (Omicron)	nuc	27259	C
 B.1.1.529 (Omicron)	nuc	8393	A
 B.1.1.529 (Omicron)	nuc	13195	C
+B.1.1.529 (Omicron)	nuc	18163	G
+B.1.1.529 (Omicron)	nuc	25000	T
+B.1.1.529 (Omicron)	nuc	27259	C
 
 19A	nuc	8782	C
 19A	nuc	14408	C
