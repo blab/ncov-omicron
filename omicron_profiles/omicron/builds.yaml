@@ -8,8 +8,8 @@ use_nextalign: true
 # started from the filtered alignment.                        james, sept 2021
 inputs:
   - name: focal
-    metadata: "data/metadata.tsv"
-    sequences: "data/sequences.fasta"
+    metadata: "data/additional_metadata.tsv"
+    sequences: "data/additional_sequences.fasta"
   - name: context
     metadata: "data/global_subsampled_metadata.tsv"
     sequences: "data/global_subsampled_sequences.fasta"
@@ -29,6 +29,9 @@ traits:
   omicron:
     sampling_bias_correction: 2.5
     columns: ["country"]
+
+mask:
+  mask_sites: "21987 21846 22813 22882 22898"
 
 files:
   description: "omicron_profiles/omicron/omicron_description.md"
